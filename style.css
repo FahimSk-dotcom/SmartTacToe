@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #D9CAB3;
+    overflow-y: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #5E0B15;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.boxes {
+    position: relative;
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #ffffc7;
+    cursor: pointer;
+}
+
+.win_container {
+    position: absolute;
+    left: 54px;
+    height: 40vmin;
+    width: 60vmin;
+    background-color: #ffffc7;
+    border-radius: 1rem;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.rst-btn {
+    margin-top: 20px;
+    height: 6vmin;
+    width: 15vmin;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bot {
+    margin-top: 20px;
+    height: 8vmin;
+    width: 20vmin;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
+
+@media (max-width: 600px) {
+    .win_container {
+        top: 85px;
+        left: 45px;
+        height: 40vmin;
+        width: 77vmin;
+        font-size: 2rem;
+    }
+
+    .bot {
+        margin-top: 20px;
+        height: 8vmin;
+        width: 60vmin;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 1rem;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    h1 {
+        padding-top: 10px;
+    }
+}
